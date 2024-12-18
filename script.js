@@ -21,6 +21,9 @@ function CalculateData(e) {
 
     if(e.target.name === 'product_price') {
         price = parseInt(e.target.value);
+        if(isNaN(price)) {
+            price = 0;
+        }
     }else {
 
         discount = parseInt(e.target.value);
@@ -31,9 +34,9 @@ function CalculateData(e) {
         
     }
 
-    result = ((price / 100) * discount).toFixed(1);
+    result = ((price / 100) * discount).toFixed(2);
 
-    finalPrice.textContent = price - result;
+    finalPrice.textContent = (price - result).toFixed(2);
     savePrice.textContent = result;
 }
 
