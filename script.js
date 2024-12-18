@@ -31,7 +31,7 @@ function CalculateData(e) {
         
     }
 
-    result = ((price / 100) * discount).toFixed(0);
+    result = ((price / 100) * discount).toFixed(1);
 
     finalPrice.textContent = price - result;
     savePrice.textContent = result;
