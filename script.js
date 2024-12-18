@@ -11,6 +11,9 @@ let price = 0;
 let discount = 0;
 let result = 0;
 
+// Clear Data 
+clearAll.addEventListener('click', clearData);
+
 productPrice.addEventListener('input', CalculateData);
 discountPercent.addEventListener('input', CalculateData);
 
@@ -28,12 +31,24 @@ function CalculateData(e) {
         
     }
 
-
     result = ((price / 100) * discount).toFixed(0);
 
     finalPrice.textContent = price - result;
     savePrice.textContent = result;
 }
 
+
+// Clear All Data Function
+
+function clearData() {
+    price = 0;
+    discount = 0;
+    result = 0;
+
+    savePrice.textContent = '0';
+    finalPrice.textContent = '0'
+    productPrice.value = '';
+    discountPercent.value = '';
+}
 
 
