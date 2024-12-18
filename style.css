@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  width: 60px;
+  font-size: 1.15rem;
+  padding: 4px 8px;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid #000b58;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000b58;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.wrapper {
+  width: 380px;
+  border: 1px solid black;
+  padding: 1rem 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+
+.display {
+  margin: 1.5rem 1rem 0.5rem;
+}
+
+.data_container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.875rem;
+}
+
+.saved_price {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.saved_data_price {
+  font-size: 1.25rem;
+}
+
+label {
+  font-size: 1.25rem;
+}
+
+.final_price_data {
+  font-size: 18px;
+}
+
+.clear_data {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clear-btn {
+  padding: 0.5rem 1.5rem;
+  border: 0;
+  font-size: 1.05rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  background: #000b58;
+  color: #fff;
+  border-radius: 4px;
+}

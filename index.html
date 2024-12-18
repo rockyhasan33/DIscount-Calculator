@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+     <link rel="stylesheet" href="style.css">
+    <title>Discount Calculator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h3 class="title">Discount</h3>
+        <div class="display">
+            <div class="data_container">
+                <label class="original_price">
+                    Original price
+                </label>
+                <input type="number" name="product_price" id="original_price_data" placeholder="0">
+            </div>
+            <div class="data_container">
+                <label class="discount">
+                    Discount (% off)
+                </label>
+                <input type="number" name="discount" id="discount_data" placeholder="0">
+            </div>
+            <div class="data_container">
+                <label class="final_price">
+                    Final price
+                </label>
+                <p class="final_price_data">
+                0
+                </p>
+            </div>
+            <div class="saved_price">
+                You save: <span class="saved_data_price">0</span>
+            </div>
+            <div class="clear_data">
+                <button class="clear-btn">clear</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
